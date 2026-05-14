@@ -12,10 +12,10 @@ public class DBConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             con = DriverManager.getConnection(
-    "jdbc:mysql://localhost:3306/complaint_db?useSSL=false&allowPublicKeyRetrieval=true",
-    "root",
-    "rupkatha"
-);
+                "jdbc:mysql://YOUR_HOST:YOUR_PORT/YOUR_DATABASE?useSSL=false&allowPublicKeyRetrieval=true",
+                "YOUR_USERNAME",
+                "YOUR_PASSWORD"
+            );
 
         } catch (Exception e) {
             e.printStackTrace();
